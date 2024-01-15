@@ -19,7 +19,7 @@ body {
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     border-radius: 16px;
     padding: 30px;
-    background: linear-gradient(135deg, rgb(238, 238, 174), rgba(255, 255, 0, 0));
+    background: linear-gradient(135deg, rgb(214, 214, 185), rgba(255, 255, 0, 0));
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }

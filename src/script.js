@@ -16,6 +16,8 @@ function refreshWeather(response) {
     windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
     temperatureElement.innerHTML = Math.round(temperature);
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+    
+    getForecast(response.data.city);
   }
   
   function formatDate(date) {
@@ -52,7 +54,15 @@ function refreshWeather(response) {
     searchCity(searchInput.value);
   }
 
-  function displayForecast(){
+  function getForecast(city) {
+    let apiKey = "fef1afed9ca33df880704d1tfb47o90a";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
+    console.log(apiUrl);
+
+  }
+
+  function displayForecast(response){
     let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
     let forecastHtml = " ";
 

@@ -1,19 +1,22 @@
 body {
     font-family: "Roboto", sans-serif;
-    background: url("https://source.unsplash.com/HOtPD7Z_74s");
+    background: url("https://source.unsplash.com/bR_-gllg7Bs");
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   a {
-    color: #7f51f4;
+    color: rgb(255, 255, 255);
   }
 
   a:hover{
-    color: white;
+    color: #0066FF;
+    font-weight: bold;
   }
+
+ 
   .weather-app {
-    /* background: white; */
+
     max-width: 600px;
     margin: 45px auto;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -40,7 +43,7 @@ body {
   }
   
   .search-form-button {
-    background: #885df1;
+    background:  #0066FF;
     padding: 15px 30px;
     border: none;
     font-size: 16px;
@@ -72,7 +75,7 @@ body {
   }
   
   .weather-app-details strong {
-    color: #f65252;
+    color: #0066FF;
   }
   
   .weather-app-temperature-container {
@@ -92,7 +95,7 @@ body {
   
   .weatehr-app-unit {
     margin-top: 6px;
-    font-size: 28px;
+    font-size: 32px;
   }
   
   .weather-forecast{
@@ -115,7 +118,7 @@ body {
 
 .weather-forecast-temperatures{
   text-align: center;
-  color:#f65282;
+  color: #0066FF;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -130,5 +133,5 @@ body {
     padding: 30px 0 0 0;
     text-align: center;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.728);
+    color: rgb(230, 226, 226);
   }
